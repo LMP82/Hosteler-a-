@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RESTAURANTE DEMO</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #111;
+    color: white;
+}
+
+nav {
+    background: black;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+header {
+    background: url('images/restaurante.jpg') center/cover;
+    padding: 120px 20px;
+    text-align: center;
+}
+
+h1 { font-size: 40px; }
+
+.button {
+    background: #e63946;
+    padding: 12px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+section {
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.card {
+    background: #222;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+}
+
+/* WhatsApp */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    padding: 10px;
+    border-radius: 50%;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="#inicio">Inicio</a>
+<a href="#carta">Carta</a>
+<a href="#galeria">Galería</a>
+<a href="#contacto">Contacto</a>
+</nav>
+
+<header id="inicio">
+<h1>Nombre del Restaurante</h1>
+<p>Comida casera · Calidad · Buen ambiente</p>
+<a class="button" href="tel:600000000">Reservar mesa</a>
+</header>
+
+<section id="carta">
+<div class="card">
+<h2>Nuestra carta</h2>
+<p>Entrantes, carnes, pescados y postres caseros.</p>
+</div>
+</section>
+
+<section id="galeria">
+<h2>Galería</h2>
+<div class="gallery">
+<img src="images/comida1.jpg">
+<img src="images/comida2.jpg">
+<img src="images/comida3.jpg">
+</div>
+</section>
+
+<section id="contacto">
+<div class="card">
+<h2>Contacto</h2>
+<p>Teléfono: 600000000</p>
+<p>Ubicación: Ciudad</p>
+</div>
+</section>
+
+<a href="https://wa.me/34600000000" class="whatsapp">
+<img src="images/whatsapp.png" width="30">
+</a>
+
+</body>
+</html>
